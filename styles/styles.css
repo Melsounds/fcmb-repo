@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    background: rgb(142, 19, 142);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /*padding: 10px 0;*/
+}
+.nav-left{
+    height: 40px;
+    
+}
+nav ul{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 155px;
+    margin-top: 10px;
+}
+nav ul li{
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+nav ul li a{
+    width: 100%;
+    text-transform: uppercase;
+    color:#fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: goldenrod;
+}
+.nav-right{
+    width: 35%;
+    margin-left: 35%;
+    background: #74449E;
+}
+.share-price-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.share-price-content p{
+    color: #fff;
+    font-size: 16.5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.header{
+    width: 100%;
+    border: 2px solid grey;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    padding: 15px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.header-logo{
+    margin-left: 15%;
+}
+.header-right{
+    border: 1px solid black;
+    width: 120%;
+    margin-left: -30%;
+}
+.header-top{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.header-top a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+}
+.open-account{
+    padding: 8px 2%;
+    cursor: pointer;
+   background-color: rgb(245, 58, 89);
+}
+.open-account:hover{
+    background: rgb(96, 11, 176);
+    transition: .2s ease-in-out;
+}
+.internet-banking{
+    padding: 8px 2%;
+    margin-left: 2%;
+    cursor: pointer;
+    background-color: rgb(96, 11, 176);
+}
+.internet-banking:hover{
+    background-color: rgb(245, 58, 89);
+    transition: .2s ease-in-out;
+}
+.ibdd{
+    margin-top: 50px;
+    background: #000;
+    position: absolute;
+    z-index: 1;
+    top: 500px;
+    width: 20px;
+    height: 20px;
+    visibility:hidden;
+}
+
+.internet-banking-btn:hover ul.ibdd{
+    visibility: visible;
+    top: 40px;
+    display: table-row;
+    width: 11.1%;
+    text-align: left;
+    height: auto;
+    background: rgb(135, 27, 84);
+    font-size: 70%;
+    margin-left: -1.2%;
+}
+.internet-banking-btn:hover ul.ibdd li{
+    border-radius: 0;
+    padding: 15px 10%;
+    list-style: none;
+    
+}
+.internet-banking-btn:hover ul.ibdd li a{
+    text-transform: none;
+    font-size: 15px;
+    
+}
+.internet-banking-btn:hover ul.ibdd li a:hover{
+    color: goldenrod
+}
+.contact-us{
+    margin-left: 2%;
+    padding: 8px 2%;
+    cursor: pointer;
+    background-color: rgb(96, 11, 176);
+}
+form{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+input{
+    margin-left: 2%;
+    outline: none;
+    padding: 8px 5%;
+    width: 100%;
+    border: 1px solid blue;
+}
+input::placeholder{
+    font-size: 15px;
+    color: gray
+}
+.search-icon{
+    position: absolute;
+    margin-left: 75%;
+    width: 6%;
+}
+.search-icon img{
+    width: 100%;
+}
+.contact-us:hover{
+    background-color: rgb(245, 58, 89);
+    transition: .2s ease-in-out;
+}

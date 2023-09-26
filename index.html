@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First City Monument Bank</title>
     <link rel="stylesheet" href="styles/styles.css">
+
+    <script>
+        $(window).load(function(){
+            setTimeout(function(){
+                $(".slideText").show('fadeIn',{},500)
+            },2000);
+        });
+    </script>
 </head>
 
-<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Poppins:wght@400;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="styles
-heet">
-
+<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Poppins:wght@400;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+ 
 <body>
     <nav>
         <div class="nav-left">
@@ -39,15 +46,34 @@ heet">
             <div class="open-account">
                 <div class="open-account-btn"><a href="">open an account</a></div>
             </div>
-            <div class="internet-banking">
+            
                 <div class="internet-banking-btn"><a href="">internet banking</a>
                     <ul class="ibdd">
-                        <li><a href="">Personal</a></li>
-                        <li><a href="">Business</a></li>
-                        <li><a href="">Corporate</a></li>
+                        <li class="personal-banking">
+                            <a href="">Personal</a>
+                        <ul class="pbdd">
+                            <li><a href="">FCMB Online</a></li>
+                            <li><a href="">Trade Services</a></li>
+                        </ul>
+                        </li>
+                        <li class="personal-banking">
+                            <a href="">Business</a>
+                            <ul class="bbdd">
+                                <li><a href="">FCMB Online (Business version)</a></li>
+                                <li><a href="">Trade Services</a></li>
+                            </ul>
+                        </li>
+                        <li class="personal-banking">
+                            <a href="">Corporate</a>
+                            <ul class="cbdd">
+                                <li><a href="">FCMB Online (Business version)</a></li>
+                                <li><a href="">Corporate Pay</a></li>
+                                <li><a href="">Trade Services</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
-            </div>
+            
             <div class="contact-us">
                 <div class="contact-us-btn"><a href="">contact us</a></div>
             </div>
@@ -63,69 +89,77 @@ heet">
             <div class="header-bottom-content">
                 <ul>
                     <li><a href="">personal banking</a>
-                    <ul class="pbdd">
+                    <ul class="pbdd2">
+                        <div class="arrow-head"></div>
                         <li><a href="">current accounts</a></li>
                         <li><a href="">savings accounts</a></li>
                         <li><a href="">investments</a></li>
                         <li><a href="">loans and credit cards</a></li>
                         <li><a href="">non-resident nigerian (nrn) banking</a></li>
                         <li><a href="">ways to bank</a></li>
-                        <li><a href="">bancassurance</a></li>
+                        <li class="last"><a href="">bancassurance</a></li>
                     </ul>
                     </li>
                     <li><a href="">Business banking</a>
-                        <ul class="pbdd">
+                        <ul class="pbdd2">
+                            <div class="arrow-head"></div>
+                            <li><a href="">propositions</a></li>
                             <li><a href="">current accounts</a></li>
                             <li><a href="">savings accounts</a></li>
-                            <li><a href="">investments</a></li>
-                            <li><a href="">loans and credit cards</a></li>
-                            <li><a href="">non-resident nigerian (nrn) banking</a></li>
-                            <li><a href="">ways to bank</a></li>
-                            <li><a href="">bancassurance</a></li>
+                            <li><a href="">loans</a></li>
+                            <li><a href="">bonds and guarantees</a></li>
+                            <li><a href="">intervention funds</a></li>
+                            <li><a href="">trade srvices</a></li>
+                            <li><a href="">payment & collection</a></li>
+                            <li class="last"><a href="">ways to bank</a></li>
                         </ul>
                     </li>
                     <li><a href="">corporate banking</a>
-                        <ul class="pbdd">
-                            <li><a href="">current accounts</a></li>
-                            <li><a href="">savings accounts</a></li>
-                            <li><a href="">investments</a></li>
-                            <li><a href="">loans and credit cards</a></li>
-                            <li><a href="">non-resident nigerian (nrn) banking</a></li>
-                            <li><a href="">ways to bank</a></li>
-                            <li><a href="">bancassurance</a></li>
+                        <ul class="pbdd2 cb">
+                            <div class="arrow-head"></div>
+                            <li><a href="">foreign exchange services</a></li>
+                            <li><a href="">trade services</a></li>
+                            <li><a href="">cash management solutions</a></li>
+                            <li class="last"><a href="">corporate finance</a></li>
                         </ul>
                     </li>
                     <li><a href="">group & subsidiaries</a>
-                        <ul class="pbdd">
-                            <li><a href="">current accounts</a></li>
-                            <li><a href="">savings accounts</a></li>
-                            <li><a href="">investments</a></li>
-                            <li><a href="">loans and credit cards</a></li>
-                            <li><a href="">non-resident nigerian (nrn) banking</a></li>
-                            <li><a href="">ways to bank</a></li>
-                            <li><a href="">bancassurance</a></li>
+                        <ul class="pbdd2">
+                            <div class="arrow-head"></div>
+                            <li><a href="">fcmb group plc</a></li>
+                            <li><a href="">csl stockbrokers</a></li>
+                            <li><a href="">fcmb capital markets</a></li>
+                            <li><a href="">fcmb am</a></li>
+                            <li><a href="">fcmb microfinance bank</a></li>
+                            <li><a href="">fcmb uk</a></li>
+                            <li><a href="">fcmb pensions limited</a></li>
+                            <li class="last"><a href="">fcmb trustees</a></li>
                         </ul>
                     </li>
-                    <li style="width:50%"><a href="">about us</a>
-                        <ul class="pbdd pbdd2">
-                            <li><a href="">current accounts</a></li>
-                            <li><a href="">savings accounts</a></li>
-                            <li><a href="">investments</a></li>
-                            <li><a href="">loans and credit cards</a></li>
-                            <li><a href="">non-resident nigerian (nrn) banking</a></li>
-                            <li><a href="">ways to bank</a></li>
-                            <li><a href="">bancassurance</a></li>
+                    <li><a href="">about us</a>
+                        <ul class="pbdd2 pbdd3">
+                            <div class="arrow-head"></div>
+                            <li><a href="">our vision/mission/values</a></li>
+                            <li><a href=""> our history</a></li>
+                            <li><a href="">investor relations</a></li>
+                            <li><a href="">csr</a></li>
+                            <li><a href="">sustainability</a></li>
+                            <li><a href="">our leadership</a></li>
+                            <li><a href="">board of directors</a></li>
+                            <li><a href="">media relations</a></li>
+                            <li><a href="">awards and recognition</a></li>
+                            <li class="last"><a href="">quality policy</a></li>
                         </ul>
                     </li>
-                    <li style="width:65%"><a href="">my bank and i</a>
-                        <ul class="pbdd pbdd2">
-                            <li><a href="">current accounts</a></li>
-                            <li><a href="">savings accounts</a></li>
-                            <li><a href="">investments</a></li>
-                            <li><a href="">loans and credit cards</a></li>
-                            <li><a href="">non-resident nigerian (nrn) banking</a></li>
-                            <li><a href="">ways to bank</a></li>
-                            <li><a href="">bancassurance</a></li>
+                    <li><a href="">my bank and i</a>
+                        <ul class="pbdd2 pb">
+                            <div class="arrow-head ah"></div>
+                            <li><a href="">fcmb shout-out</a></li>
+                            <li><a href="">telephone self service</a></li>
+                            <li><a href="">current campaigns/promos</a></li>
+                            <li><a href="">carerrs</a></li>
+                            <li><a href="">customer feedback</a></li>
+                            <li class="last"><a href="">customer services</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -142,23 +176,73 @@ heet">
             <input type="radio" name="radio-btn" id="radio5">
 
             <div class="slide first">
-                <p>
-                    10 lucky people can win #1million each in the
-                    fcmb Millionaire promo
-                </p>
+                <div id="slidetext">
+                    <p>
+                        10 lucky people can win #1million each in the
+                        fcmb Millionaire promo
+                    </p>
+
+                    <a href="">Learn more ></a>
+                </div>
                 <img src="images/FCMB Millionaire Promo Masthead.jpg" alt="">
             </div>
             <div class="slide">
-                <p>hi</p>
+                <div id="slidetext">
+                    <p>
+                        free 3k for you
+                    </p>
+                    <span>
+                        <p>
+                            You and your friends can win 3k and 20% bonus on first airtime
+                        purchase.
+                    </p>
+                    </span>
+                    <div class="btn"><a href="">Learn more ></a></div>
+                </div>
             <img src="images/Refer & Win Promo_1349x380_Without_Image.jpg"alt="">
             </div>
             <div class="slide">
+                <div id="slidetext">
+                    <p>
+                        personal or business account?
+                    </p>
+                    <span>
+                        <p>
+                            Open a personal or business account in minutes, tailored to your
+                            unique needs.
+                    </p>
+                    </span>
+                    <div class="btn"><a href="">Click here ></a></div>
+                </div>
                 <img src="images/Hybrid-online-account-opening_0.jpg" alt="">
             </div>
             <div class="slide">
+                <div id="slidetext">
+                    <p>
+                        up to 5 billion naira for your business
+                    </p>
+                    <span>
+                        <p>
+                            Expand your business with our variety of business loans.
+                    </p>
+                    </span>
+                    <div class="btn"><a href="">Learn more ></a></div>
+                </div>
                 <img src="images/Website Banner Refresh_Business Loans.jpg" alt="">
             </div>
             <div class="slide">
+                <div id="slidetext">
+                    <p>
+                        grow with up to 11% interest on your investments.
+                    </p>
+                    <span>
+                        <p>
+                            Looking for a dollar or naira savings and investment product that offers
+                            safe, fixed and better returns?
+                    </p>
+                    </span>
+                    <div class="btn"><a href="">Learn more ></a></div>
+                </div>
                 <img src="images/Website Banner Refresh_GRO.jpg" alt="">
             </div>
             <div class="auto-navigation">
@@ -290,6 +374,7 @@ heet">
         </div>
         </div>
     </div>
+    <div class="more-benefits">
         <div class="tips">
             <div class="tips-contents">
                 <div class="tips-content">
@@ -378,24 +463,206 @@ heet">
                         </div>
                     </div>
                     <div class="tips-content-right">
-                        <div class="video-container">
                             <div class="video">
-                                
+                                <iframe width="610" height="450" 
+                                src="https://www.youtube.com/embed/V4ygX8ODYHQ?si=F-D01phtBNbhaC5K" 
+                                title="YouTube video player" frameborder="0" allow="accelerometer; 
+                                autoplay; clipboard-write; encrypted-media; gyroscope;
+                                 picture-in-picture; web-share" allowfullscreen></iframe>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    
+        <div class="sitemap">
+            <div class="sitemap-title"><p>sitemap</p></div>
+            <div class="sitemap-contents">
+                <div class="sitemap-content">
+                    <div class="title"><a href="">personal banking</a></div>
+                    <ul>
+                        <li><a href="">current account</a></li>
+                        <li><a href="">savings account</a></li>
+                        <li><a href="">investments</a></li>
+                        <li><a href="">loans and credit cards</a></li>
+                        <li><a href="">non-resident nigerian(nrn) banking</a></li>
+                        <li><a href="">ways to bank</a></li>
+                        <li><a href="">bancassurance</a></li>
+                    </ul>
+                </div>
+                <div class="sitemap-content spc">
+                    <div class="title"><a href="">business banking</a></div>
+                    <ul>
+                        <li><a href="">propositions</a></li>
+                        <li><a href="">currentcurrent accounts</a></li>
+                        <li><a href="">savings accounts</a></li>
+                        <li><a href="">loans</a></li>
+                        <li><a href="">bonds & guarantees</a></li>
+                        <li><a href="">intervention funds</a></li>
+                        <li><a href="">trade services</a></li>
+                        <li><a href="">payment & collection</a></li>
+                        <li><a href="">ways to bank</a></li>
+                    </ul>
+                </div>
+                <div class="sitemap-content spc">
+                    <div class="title"><a href="">corporate banking</a></div>
+                    <ul>
+                        <li><a href="">foreign exchange services</a></li>
+                        <li><a href="">trade services</a></li>
+                        <li><a href="">cash management solutions</a></li>
+                        <li><a href="">corporate finance</a></li>
+                    </ul>
+                </div>
+                <div class="sitemap-content spc">
+                    <div class="title"><a href="">group & subsidiaries</a></div>
+                    <ul>
+                        <li><a href="">fcmb group plc.</a></li>
+                        <li><a href="">csl stockbrokers</a></li>
+                        <li><a href="">fcmb capital markets</a></li>
+                        <li><a href="">fcmb am</a></li>
+                        <li><a href="">fcmb microfinance bank</a></li>
+                        <li><a href="">fcmb uk</a></li>
+                        <li><a href="">fcmb pensions limited</a></li>
+                        <li><a href="">fcmb trustees</a></li>
+                    </ul>
+                </div>
+                <div class="sitemap-content spc">
+                    <div class="title"><a href="">about us</a></div>
+                    <ul>
+                        <li><a href="">our vision/mission/values</a></li>
+                        <li><a href="">our history</a></li>
+                        <li><a href="">investor reletionshoips</a></li>
+                        <li><a href="">csr</a></li>
+                        <li><a href="">sustainability</a></li>
+                        <li><a href="">our leadership</a></li>
+                        <li><a href="">board of directors</a></li>
+                        <li><a href="">media relations</a></li>
+                        <li><a href="">awards and recognition</a></li>
+                        <li><a href="">quality policy</a></li>
+                    </ul>
+                </div>
+                <div class="sitemap-content spc">
+                    <div class="title"><a href="">my bank and i</a></div>
+                    <ul>
+                        <li><a href="">fcmb shout-out</a></li>
+                        <li><a href="">telephone self service</a></li>
+                        <li><a href="">current campaigns/promos</a></li>
+                        <li><a href="">careers</a></li>
+                        <li><a href="">customer feedback</a></li>
+                        <li><a href="">customer service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class = "footer">
+            <div class="footer-content">
+                <div class="footer-content-text">
+                    <p>my bank and I</p>
+                </div>
+            </div>    
+        </div>
+        <div class="footer-nav">
+            <div class="footer-nav-contents">
+                <div class="footer-nav-content left">
+                    <div class="icons">
+                        <div class="icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="icon">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-nav-content right">
+                    <div class="footer-list">
+                        <div class="footer-list-items">
+                            <div class="footer-list-item">
+                                <ul>
+                                    <li>
+                                        <a href="">privacy policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-list-item">
+                                <ul>
+                                    <li>
+                                        <a href="">press releases</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-list-item">
+                                <ul>
+                                    <li>
+                                        <a href="">share prices</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-list-item">
+                                <ul>
+                                    <li>
+                                        <a href="">whistle blower</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-list-item">
+                                <ul>
+                                    <li>
+                                        <a href="">fraud prevention</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-list-item">
+                                <ul>
+                                    <li>
+                                        <a href="">aml</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-list-item">
+                                <ul>
+                                    <li>
+                                        <a href="">careers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                
+                </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
     <script type="text/javascript">
+        function showdiv(){
+            document.getElementById("slidetext").style.visibility="visible";
+        }
+        setTimeout("showdiv()", 3000);
+
+        function hidediv(){
+            document.getElementById("slidetext").style.visibility="hidden";
+        }
+        setTimeout("hidediv()", 10000);
+        
        var counter = 1;
-        /*setInterval(function(){
+        setInterval(function(){
             document.getElementById('radio' + counter).checked = true;
             counter++;
             if(counter > 5){
                 counter = 1;
             }
-        } ,5000);*/
+        } ,5000);
     </script>
 </body>
 </html>

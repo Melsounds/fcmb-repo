@@ -5,14 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First City Monument Bank</title>
     <link rel="stylesheet" href="styles/styles.css">
-
-    <script>
-        $(window).load(function(){
-            setTimeout(function(){
-                $(".slideText").show('fadeIn',{},500)
-            },2000);
-        });
-    </script>
 </head>
 
 <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Poppins:wght@400;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -645,6 +637,9 @@
                 </div>
         </div>
     <script type="text/javascript">
+        
+
+
         function showdiv(){
             document.getElementById("slidetext").style.visibility="visible";
         }
@@ -654,7 +649,8 @@
             document.getElementById("slidetext").style.visibility="hidden";
         }
         setTimeout("hidediv()", 10000);
-        
+
+                
        var counter = 1;
         setInterval(function(){
             document.getElementById('radio' + counter).checked = true;

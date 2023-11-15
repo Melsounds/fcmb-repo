@@ -1,3 +1,4 @@
+@media screen and (min-width:901px){
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +7,9 @@
 body{
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
+}
+.nav-mobile{
+    display: none;
 }
 nav{
     width: 100%;
@@ -66,15 +70,15 @@ nav ul li a:hover{
     border-top: none;
     border-right: none;
     padding-top:15px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
 }
 .header-logo{
-    margin-left: 15%;
+    margin-left: 5%;
 }
 .header-right{
-    width: 120%;
-    margin-left: -30%;
+    width: 75%;
+    margin-left: 25%;
+    margin-right: 0px;
+    margin-top: -130px;
 }
 .header-top{
     display: flex;
@@ -86,21 +90,30 @@ nav ul li a:hover{
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    font-size: 13px;
+    font-size: 10px;
     font-weight: bold;
 }
 .open-account{
-    padding: 8px 2%;
+    padding: 5px 0px;
     cursor: pointer;
+    width: 150px;
    background-color: rgb(245, 58, 89);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 12%;
 }
 .open-account:hover{
     background: rgb(96, 11, 176);
     transition: .2s ease-in-out;
 }
 .internet-banking-btn{
-    padding: 8px 2%;
+    padding: 8px 0%;
     margin-left: 2%;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     background-color: rgb(96, 11, 176);
 }
@@ -122,14 +135,14 @@ nav ul li a:hover{
 
 .internet-banking-btn:hover ul.ibdd{
     visibility: visible;
-    top: 60px;
+    top: 50px;
     display: table-row;
-    width: 11%;
+    width: 13%;
     text-align: left;
     height: auto;
     background: rgb(135, 27, 84);
     font-size: 70%;
-    margin-left: -1.2%;
+    margin-left: 0%;
 }
 .internet-banking-btn:hover ul.ibdd li{
     border-radius: 0;
@@ -146,7 +159,7 @@ nav ul li a:hover{
     color: goldenrod
 }
 .pbdd{
-    margin-top: 50px;
+    margin-top: 0px;
     background: #000;
     position: absolute;
     z-index: 1;
@@ -159,7 +172,7 @@ nav ul li a:hover{
 .personal-banking:hover ul.pbdd{
     visibility: visible;
     box-shadow: 4px 4px 4px 0px rgb(33, 31, 31);
-    top: -50px;
+    top: 0px;
     display: table-row;
     width: 100%;
     text-align: left;
@@ -230,7 +243,11 @@ nav ul li a:hover{
 
 .contact-us{
     margin-left: 2%;
-    padding: 8px 2%;
+    padding: 5px 2%;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     background-color: rgb(96, 11, 176);
 }
@@ -245,7 +262,7 @@ input{
     margin-left: 2%;
     outline: none;
     padding: 8px 5%;
-    width: 100%;
+    width: 700px;
     border: 1px solid blue;
 }
 input::placeholder{
@@ -267,25 +284,26 @@ input::placeholder{
 .header-bottom-content ul{
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     margin-top: 0px;
-    margin-left: -17%;
-    width:103%;
+    margin-left: 0%;
+    width:100%;
 }
 .header-bottom-content ul li{
     list-style: none;
-    width: 100%;
-    text-align: center;
+    width: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 50px;
 }
 .header-bottom-content ul li a{
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 62.44%;
     padding: 8px 0;
     color: rgb(106, 100, 100);
     font-weight: bold;
-    
 }
 .header-bottom-content ul li a:hover{
     color: purple;
@@ -308,25 +326,26 @@ input::placeholder{
 
 li:hover ul.pbdd2{
     visibility: visible;
-    top: 188px;
+    top: 197px;
     display: table-row;
-    width: 17%;
-    text-align: left;
+    width: 20%;
     height: auto;
     background: rgb(34, 3, 62);
-    margin-left: 6.2%;
+    left: 22%;
     border-radius: 10px;
     z-index: 2;
     opacity: 80%;
 }
 li:hover ul.pbdd2 li{
     border-radius: 0;
-    padding-top: 15px;
-    padding-right: 20%;
-    padding-left: 9.5% ;
+    padding-top: 0px;
+    padding-right: 0%;
+    padding-left: 0% ;
     list-style: none;
-    text-align-last: left;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 96%;
     margin: 0;
 }
 li:hover ul.pbdd2 li.last{
@@ -342,6 +361,7 @@ li:hover ul.pbdd2 li a{
     margin-left: 0px;
     font-weight: normal;
     text-transform: uppercase;
+    margin-left: 5%;
 }
 li:hover ul.pbdd2 li a:hover{
     color: goldenrod
@@ -351,10 +371,22 @@ li:hover ul.pbdd2{
 }
 li:hover ul.pb{
     width: 18%;
-    margin-left: -10%;
+    margin-left: 60%;
 }
 .ah{
     margin-left: 90%;
+}
+li:hover ul.cb{
+    left: 48%;
+}
+li:hover ul.bb{
+    margin-left: 17%;
+}
+li:hover ul.gs{
+    margin-left: 42%;
+}
+li:hover ul.au{
+    left: 73%;
 }
 /*Banner css*/
 .slider-container{
@@ -384,7 +416,7 @@ li:hover ul.pb{
     position: absolute;
     width: 800px;
     margin-top: 50px;
-    margin-left: 53.5%;
+    margin-left: 48%;
     display: flex;
     justify-content: center;
 }
@@ -423,7 +455,7 @@ li:hover ul.pb{
     width: 800px;
     justify-content: center;
     margin-top: 50px;
-    margin-left: 53.5%;
+    margin-left: 48%;
     
 }
 .auto-navigation div{
@@ -739,9 +771,9 @@ background: rgb(232, 228, 228);
 }
 .tips-content-right{
     margin-top: -25px;
-    margin-left: 5%;
+    margin-left: 0%;
     overflow: hidden;
-    width: 109%;
+    width: 100%;
     height: 450px;
 }
 
@@ -853,7 +885,7 @@ background: rgb(232, 228, 228);
     padding-right: 20%;
 }
 .footer-nav-content.right ul{
-    margin-top: 30px;
+    margin-top: 30px;   
 }
 .footer-nav-content.right ul li{
     list-style: none;
@@ -868,3 +900,5 @@ background: rgb(232, 228, 228);
 .footer-nav-content.right ul li a:hover{
     color: rgb(142, 19, 142);
 }
+}
+
